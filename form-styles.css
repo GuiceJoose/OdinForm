@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: norseBold;
+    src: url(Norse-Bold.otf);
+}
+
+html {    
+    background-color: rgb(38,18,8);
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    margin: 2rem 15rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.leftSide {
+    position: relative;
+    background-image: url('GooseBackground.jpg');
+    background-size: cover;
+}
+
+.logoBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15%;
+    background-color: rgb(38,18,8,.4);
+    height: 15%;
+    font-family: norseBold;
+    font-size: 6rem;
+    color: white;
+}
+
+img[src="odin-lined.png"]{
+    height: 75%;
+    width: auto;
+
+}
+
+.imgCredit {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+}
+
+.rightSide {
+    background-color: rgb(222,213,210);
+}
+
+.heroText { 
+    padding: 8rem 10rem 5rem 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(38,18,8);
+}
+
+form {
+    background-color: white;
+    padding-top: 1.5rem;
+}
+
+.formTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding-left: 4rem;
+    color: rgb(38,18,8);
+}
+
+.formInputs {
+    letter-spacing: .1rem;
+    color: rgb(38,18,8);
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    row-gap: 2rem;
+    padding: 2rem 10rem 3rem 4rem;
+}
+
+input:focus {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: blue;
+    box-shadow: 5px 10px 10px grey;
+}
+
+input:invalid {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: red;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: .75rem;
+    padding: 2px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'] {
+    height: 1.5rem;
+    width: 15rem;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+
+.lastName,
+.firstName,
+.email,
+.phoneNumber,
+.passWord,
+.confirmPass {
+    display: flex;
+    flex-direction: column;
+}
+
+.createButton {
+    background-color: rgb(222,213,210);
+    padding: 2rem 4rem 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.createButton>a {
+    color: rgb(205,122,48);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+input[type='submit'] {
+    color: white;
+    background-color: rgb(205,122,48);
+    padding: 1rem 3rem 1rem 3rem;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 12rem;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 10px 10px grey;
+}
+
+input[type='submit']:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px black;
+}
